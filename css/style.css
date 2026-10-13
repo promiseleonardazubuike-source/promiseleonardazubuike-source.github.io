@@ -1869,3 +1869,957 @@ figcaption {
         transition-duration: .01ms !important;
     }
 }
+```css
+/* =========================================================
+   AGROCYCLE? NO — PERSONAL PROFESSIONAL PORTFOLIO
+   HTML COMPATIBILITY + LAYOUT IMPROVEMENTS
+   ========================================================= */
+
+/* 1. GLOBAL SECTION STYLES */
+
+.section {
+    padding: 90px 0;
+    scroll-margin-top: 90px;
+}
+
+.section-light {
+    background: var(--surface-soft, #f7f6f2);
+}
+
+.section-heading {
+    max-width: 760px;
+    margin: 0 auto 42px;
+    text-align: center;
+}
+
+.section-heading h2 {
+    margin-bottom: 14px;
+}
+
+.section-heading p {
+    line-height: 1.8;
+}
+
+/* 2. BRAND AND NAVIGATION */
+
+.brand {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 3px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.brand-name {
+    font-size: 1.1rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+}
+
+.brand-caption {
+    font-size: 0.72rem;
+    color: var(--text-muted, #777);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+/* 3. HERO SECTION */
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+    align-items: center;
+    gap: 56px;
+}
+
+.hero-content {
+    min-width: 0;
+}
+
+.hero-visual {
+    position: relative;
+    max-width: 440px;
+    width: 100%;
+    justify-self: center;
+}
+
+.profile-frame {
+    overflow: hidden;
+    border-radius: 24px;
+    border: 1px solid var(--border, #dedbd2);
+    background: var(--surface, #fff);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.10);
+}
+
+.profile-frame img,
+.profile-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.profile-note {
+    margin-top: 16px;
+    padding: 16px 18px;
+    border: 1px solid var(--border, #dedbd2);
+    border-radius: 14px;
+    background: var(--surface, #fff);
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+/* 4. BUTTONS */
+
+.button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    min-height: 46px;
+    padding: 12px 20px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font: inherit;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+}
+
+.button-primary {
+    background: var(--accent, #c79a45);
+    color: #171717;
+}
+
+.button-primary:hover {
+    background: var(--accent-hover, #d8ae5c);
+}
+
+.button-secondary {
+    background: transparent;
+    color: inherit;
+    border-color: var(--border, #d6d3ca);
+}
+
+.button-secondary:hover {
+    border-color: var(--accent, #c79a45);
+}
+
+/* 5. PROFESSIONAL HIGHLIGHTS */
+
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 42px;
+}
+
+.highlight-item {
+    padding: 22px;
+    border: 1px solid var(--border, #e1ded6);
+    border-radius: 14px;
+    background: var(--surface, #fff);
+}
+
+.highlight-number {
+    display: block;
+    margin-bottom: 8px;
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--accent, #b88932);
+}
+
+.highlight-item p {
+    margin: 0;
+    line-height: 1.65;
+    color: var(--text-muted, #777);
+}
+
+/* 6. ABOUT SECTION */
+
+.about-panel {
+    padding: 28px;
+    border: 1px solid var(--border, #e1ded6);
+    border-radius: 18px;
+    background: var(--surface, #fff);
+}
+
+.panel-label {
+    margin-bottom: 16px;
+    font-size: 0.76rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent, #b88932);
+}
+
+.check-list {
+    display: grid;
+    gap: 12px;
+    padding-left: 20px;
+}
+
+.check-list li {
+    padding-left: 4px;
+    line-height: 1.7;
+}
+
+/* 7. EXPERTISE CARDS */
+
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.expertise-card {
+    height: 100%;
+    padding: 26px;
+    border: 1px solid var(--border, #e1ded6);
+    border-radius: 16px;
+    background: var(--surface, #fff);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.expertise-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.07);
+}
+
+.card-index {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    color: var(--accent, #b88932);
+}
+
+.expertise-card h3 {
+    margin-bottom: 12px;
+}
+
+.expertise-card p {
+    margin-bottom: 0;
+    line-height: 1.75;
+    color: var(--text-muted, #777);
+}
+
+/* 8. EXPERIENCE */
+
+.experience-list {
+    display: grid;
+    gap: 22px;
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+.experience-item {
+    padding: 26px;
+    border: 1px solid var(--border, #e1ded6);
+    border-radius: 16px;
+    background: var(--surface, #fff);
+}
+
+.experience-meta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.experience-period,
+.experience-type {
+    font-size: 0.84rem;
+    color: var(--text-muted, #777);
+}
+
+.experience-type {
+    padding: 5px 10px;
+    border: 1px solid var(--border, #dedbd2);
+    border-radius: 999px;
+}
+
+.experience-details {
+    padding-left: 20px;
+}
+
+.experience-details li {
+    margin-bottom: 8px;
+    line-height: 1.7;
+}
+
+/* 9. ENGINEERING PROJECTS */
+
+.project-topline {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.project-domain {
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent, #b88932);
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 18px;
+}
+
+.project-tags span {
+    display: inline-block;
+    padding: 6px 10px;
+    border: 1px solid var(--border, #dedbd2);
+    border-radius: 999px;
+    font-size: 0.78rem;
+}
+
+/* 10. VIDEO PORTFOLIO */
+
+.video-info {
+    padding: 18px;
+}
+
+.video-label {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 0.76rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent, #b88932);
+}
+
+.video-info h3 {
+    margin-bottom: 10px;
+}
+
+.video-info p {
+    line-height: 1.7;
+    color: var(--text-muted, #777);
+}
+
+.channel-cta {
+    margin-top: 34px;
+    text-align: center;
+}
+
+/* Make embedded videos responsive */
+
+.video-card iframe,
+.video-embed iframe,
+iframe {
+    max-width: 100%;
+}
+
+.video-card iframe,
+.video-embed iframe {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border: 0;
+}
+
+/* 11. RESEARCH INTERESTS */
+
+.research-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 22px;
+    border: 1px solid var(--border, #e1ded6);
+    border-radius: 14px;
+    background: var(--surface, #fff);
+}
+
+.research-number {
+    flex: 0 0 auto;
+    font-weight: 800;
+    color: var(--accent, #b88932);
+}
+
+/* 12. CONTACT AND FOOTER */
+
+.contact-section {
+    scroll-margin-top: 90px;
+}
+
+.footer-brand {
+    font-weight: 800;
+    color: inherit;
+}
+
+.copyright {
+    font-size: 0.85rem;
+    line-height: 1.7;
+    color: var(--text-muted, #777);
+}
+
+/* 13. GENERAL POLISH */
+
+img {
+    max-width: 100%;
+}
+
+a {
+    transition: color 0.2s ease;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+:focus-visible {
+    outline: 3px solid var(--accent, #c79a45);
+    outline-offset: 4px;
+}
+
+/* 14. TABLET LAYOUT */
+
+@media (max-width: 900px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .hero-visual {
+        max-width: 360px;
+    }
+
+    .highlights-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .expertise-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .section {
+        padding: 72px 0;
+    }
+}
+
+/* 15. MOBILE LAYOUT */
+
+@media (max-width: 600px) {
+    .section {
+        padding: 56px 0;
+    }
+
+    .highlights-grid,
+    .expertise-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-panel,
+    .expertise-card,
+    .experience-item {
+        padding: 20px;
+    }
+
+    .experience-meta {
+        flex-direction: column;
+    }
+
+    .project-topline {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    .hero-visual {
+        max-width: 100%;
+    }
+
+    .section-heading {
+        margin-bottom: 30px;
+        text-align: left;
+    }
+
+    .research-item {
+        gap: 12px;
+        padding: 18px;
+    }
+}
+
+/* 16. ACCESSIBILITY: REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+```
+/* =====================================================
+   ENGINEERING PROJECT PAGES
+   Hydrogen Plant + Enzymatic Hydrolysis
+   ===================================================== */
+
+.project-page {
+    --project-bg: #f7f6f2;
+    --project-card: #ffffff;
+    --project-text: #252722;
+    --project-muted: #62665f;
+    --project-accent: #c49a48;
+    --project-border: #e4e1d9;
+
+    margin: 0;
+    background: var(--project-bg);
+    color: var(--project-text);
+    font-family: "DM Sans", "Segoe UI", Arial, sans-serif;
+    line-height: 1.7;
+}
+
+.project-page *,
+.project-page *::before,
+.project-page *::after {
+    box-sizing: border-box;
+}
+
+.project-page img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* NAVIGATION */
+
+.project-page nav {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    width: 100%;
+    padding: 18px max(5%, calc((100% - 1180px) / 2));
+    background: #ffffff;
+    border-bottom: 1px solid var(--project-border);
+}
+
+.project-page nav .logo {
+    flex-shrink: 0;
+}
+
+.project-page nav .logo h2 {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.project-page nav .logo span {
+    display: block;
+    margin-top: 3px;
+    color: var(--project-muted);
+    font-size: 0.8rem;
+}
+
+.project-page nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.project-page nav ul a {
+    color: var(--project-text);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.project-page nav ul a:hover {
+    color: #9a7024;
+}
+
+/* PROJECT HERO */
+
+.project-page .project-hero {
+    padding: 88px 24px 82px;
+    background: #222720;
+    color: #ffffff;
+}
+
+.project-page .project-hero-content {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.project-page .hero-tag {
+    margin: 0 0 18px;
+    color: #e3bd70;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+}
+
+.project-page .project-hero h1 {
+    max-width: 900px;
+    margin: 0 0 24px;
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    font-weight: 800;
+    line-height: 1.12;
+    letter-spacing: -0.04em;
+}
+
+.project-page .project-subtitle {
+    max-width: 800px;
+    margin: 0;
+    color: #e1e4dc;
+    font-size: 1.05rem;
+    line-height: 1.9;
+}
+
+/* ACTION BUTTONS */
+
+.project-page .hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.project-page .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 46px;
+    padding: 11px 18px;
+    border: 1px solid #c49a48;
+    border-radius: 7px;
+    background: #c49a48;
+    color: #20221d;
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.project-page .btn:hover {
+    transform: translateY(-2px);
+    background: #dfbd78;
+}
+
+.project-page .btn:focus-visible {
+    outline: 3px solid #e3bd70;
+    outline-offset: 4px;
+}
+
+/* SECTION LAYOUT */
+
+.project-page main {
+    width: 100%;
+}
+
+.project-page section:not(.project-hero) {
+    width: min(100% - 48px, 1100px);
+    margin: 0 auto;
+    padding: 62px 0;
+    scroll-margin-top: 24px;
+}
+
+.project-page section:not(.project-hero) + section:not(.project-hero) {
+    border-top: 1px solid var(--project-border);
+}
+
+.project-page section:not(.project-hero) > h2 {
+    margin: 0 0 28px;
+    color: var(--project-text);
+    font-size: clamp(1.55rem, 3vw, 2.2rem);
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -0.025em;
+}
+
+/* TEXT CONTAINERS */
+
+.project-page .about-container {
+    width: 100%;
+}
+
+.project-page .about-text {
+    max-width: 900px;
+}
+
+.project-page .about-text p {
+    margin: 0 0 18px;
+    color: var(--project-muted);
+    line-height: 1.9;
+}
+
+.project-page .about-text p:last-child {
+    margin-bottom: 0;
+}
+
+.project-page .about-text strong {
+    color: var(--project-text);
+}
+
+/* SKILL AND OBJECTIVE CARDS */
+
+.project-page .skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.project-page .skill-card {
+    min-width: 0;
+    padding: 25px;
+    border: 1px solid var(--project-border);
+    border-radius: 12px;
+    background: var(--project-card);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.025);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-page .skill-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+}
+
+.project-page .skill-card h3 {
+    margin: 0 0 12px;
+    font-size: 1.08rem;
+    line-height: 1.5;
+}
+
+.project-page .skill-card p {
+    margin: 0;
+    color: var(--project-muted);
+    line-height: 1.8;
+}
+
+/* RESULTS TABLES */
+
+.project-page .project-table {
+    width: 100%;
+    margin: 24px 0;
+    overflow-x: auto;
+    border: 1px solid var(--project-border);
+    border-radius: 10px;
+    background: var(--project-card);
+    -webkit-overflow-scrolling: touch;
+}
+
+.project-page .project-table table {
+    width: 100%;
+    min-width: 420px;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.project-page .project-table th,
+.project-page .project-table td {
+    padding: 15px 18px;
+    border-bottom: 1px solid var(--project-border);
+    vertical-align: top;
+    overflow-wrap: anywhere;
+}
+
+.project-page .project-table th {
+    background: #ece9e0;
+    color: #252722;
+    font-size: 0.88rem;
+    font-weight: 800;
+}
+
+.project-page .project-table td {
+    color: var(--project-muted);
+    font-size: 0.92rem;
+}
+
+.project-page .project-table tbody tr:last-child td,
+.project-page .project-table tr:last-child td {
+    border-bottom: none;
+}
+
+.project-page .project-table tr:hover td {
+    background: #fbfaf7;
+}
+
+/* LISTS */
+
+.project-page .project-list {
+    display: grid;
+    gap: 10px;
+    margin: 20px 0 24px;
+    padding-left: 24px;
+}
+
+.project-page .project-list li {
+    padding-left: 5px;
+    color: var(--project-muted);
+    line-height: 1.8;
+}
+
+.project-page .project-list li::marker {
+    color: var(--project-accent);
+}
+
+/* PROJECT DIAGRAM AND IMAGE */
+
+.project-page .project-card {
+    overflow: hidden;
+    padding: 20px;
+    border: 1px solid var(--project-border);
+    border-radius: 12px;
+    background: var(--project-card);
+}
+
+.project-page .project-image {
+    width: 100%;
+    max-height: 650px;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 6px;
+    background: #ffffff;
+}
+
+.project-page .image-caption {
+    margin: 16px 0 0;
+    color: var(--project-muted);
+    font-size: 0.88rem;
+    line-height: 1.7;
+}
+
+/* FOOTER */
+
+.project-page footer {
+    margin-top: 30px;
+    padding: 30px 24px;
+    border-top: 1px solid var(--project-border);
+    background: #222720;
+    color: #ffffff;
+    text-align: center;
+}
+
+.project-page footer p {
+    margin: 5px 0;
+    font-size: 0.88rem;
+    line-height: 1.7;
+    color: #e1e4dc;
+}
+
+/* TABLET */
+
+@media (max-width: 760px) {
+    .project-page nav {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 16px;
+        padding: 18px 24px;
+    }
+
+    .project-page nav ul {
+        justify-content: flex-start;
+        gap: 18px;
+    }
+
+    .project-page .project-hero {
+        padding: 64px 24px;
+    }
+
+    .project-page section:not(.project-hero) {
+        padding: 46px 0;
+    }
+
+    .project-page .skills-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+
+    .project-page .skill-card {
+        padding: 20px;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 520px) {
+    .project-page nav ul {
+        gap: 14px;
+    }
+
+    .project-page nav ul a {
+        font-size: 0.84rem;
+    }
+
+    .project-page .project-hero {
+        padding: 50px 20px;
+    }
+
+    .project-page .project-hero h1 {
+        font-size: 2.1rem;
+    }
+
+    .project-page .project-subtitle {
+        font-size: 0.96rem;
+    }
+
+    .project-page .hero-buttons {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .project-page .btn {
+        width: 100%;
+    }
+
+    .project-page section:not(.project-hero) {
+        width: calc(100% - 40px);
+        padding: 38px 0;
+    }
+
+    .project-page .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .project-page .project-table th,
+    .project-page .project-table td {
+        padding: 12px;
+    }
+
+    .project-page .project-card {
+        padding: 12px;
+    }
+}
